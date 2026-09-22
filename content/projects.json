@@ -1,0 +1,59 @@
+{
+  "items": [
+    {
+      "image": "images/water_tower_construction.jpg",
+      "title_fr": "Forage et château d'eau",
+      "body_fr": "Un nouveau point d'eau potable est en cours de construction pour desservir un village du Bénin qui manque cruellement d'eau.",
+      "title_en": "Borehole and Water Tower",
+      "body_en": "A new clean water point is being built to serve a village in Benin that badly lacks water.",
+      "title_ar": "حفر بئر وبناء برج مياه",
+      "body_ar": "يجري حاليًا إنشاء نقطة مياه صالحة للشرب لخدمة قرية في بنين تعاني نقصًا حادًا في المياه.",
+      "title_tr": "Sondaj Kuyusu ve Su Kulesi",
+      "body_tr": "Suya ciddi ihtiyacı olan bir Benin köyüne hizmet vermek için yeni bir temiz su noktası inşa ediliyor."
+    },
+    {
+      "image": "images/mosque_new2.jpg",
+      "title_fr": "Construction d'une mosquée",
+      "body_fr": "Une mosquée est en cours de construction pour offrir à une communauté un lieu de culte digne et durable.",
+      "title_en": "Mosque Construction",
+      "body_en": "A mosque is being built to give a community a dignified, lasting place of worship.",
+      "title_ar": "بناء مسجد",
+      "body_ar": "يجري حاليًا بناء مسجد لتوفير مكان عبادة كريم ودائم لأحد المجتمعات.",
+      "title_tr": "Cami İnşaatı",
+      "body_tr": "Bir topluluğa onurlu ve kalıcı bir ibadet alanı sunmak için bir cami inşa ediliyor."
+    },
+    {
+      "image": "images/school_building.jpg",
+      "title_fr": "Construction d'une école",
+      "body_fr": "Des salles de classe sont en cours de construction pour permettre à davantage d'enfants du Bénin d'accéder à l'éducation.",
+      "title_en": "School Construction",
+      "body_en": "Classrooms are being built to give more children in Benin access to education.",
+      "title_ar": "بناء مدرسة",
+      "body_ar": "يجري حاليًا بناء قاعات دراسية لتمكين المزيد من أطفال بنين من الوصول إلى التعليم.",
+      "title_tr": "Okul İnşaatı",
+      "body_tr": "Benin'da daha fazla çocuğun eğitime erişmesi için derslikler inşa ediliyor."
+    },
+    {
+      "image": "images/iftar_children.jpg",
+      "title_fr": "Iftar du Ramadan",
+      "body_fr": "Une collecte est ouverte pour financer les iftars collectifs offerts aux enfants et aux familles durant tout le mois de Ramadan.",
+      "title_en": "Ramadan Iftar",
+      "body_en": "A fundraiser is open to fund collective iftars offered to children and families throughout Ramadan.",
+      "title_ar": "إفطار رمضان",
+      "body_ar": "حملة تبرع مفتوحة لتمويل الإفطارات الجماعية المقدمة للأطفال والأسر طوال شهر رمضان.",
+      "title_tr": "Ramazan İftarı",
+      "body_tr": "Ramazan boyunca çocuklara ve ailelere sunulan toplu iftarları finanse etmek için bağış kampanyası açıktır."
+    },
+    {
+      "image": "images/distrib_bags2.jpg",
+      "title_fr": "Distribution de colis alimentaires",
+      "body_fr": "Une collecte est ouverte pour constituer et distribuer des colis alimentaires aux familles les plus démunies du Bénin.",
+      "title_en": "Food Parcel Distribution",
+      "body_en": "A fundraiser is open to prepare and distribute food parcels to the most vulnerable families in Benin.",
+      "title_ar": "توزيع الحزم الغذائية",
+      "body_ar": "حملة تبرع مفتوحة لتجهيز وتوزيع حزم غذائية على أشد الأسر احتياجًا في بنين.",
+      "title_tr": "Gıda Paketi Dağıtımı",
+      "body_tr": "Benin'daki en muhtaç ailelere gıda paketi hazırlamak ve dağıtmak için bağış kampanyası açıktır."
+    }
+  ]
+}

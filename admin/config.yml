@@ -1,0 +1,69 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded photos are stored, and how they're referenced from content
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+# French is the required language; EN/AR/TR are optional — the site falls
+# back to the French text automatically if a translation is left empty.
+collections:
+  - name: "news"
+    label: "Actualités"
+    label_singular: "actualité"
+    files:
+      - name: "news"
+        label: "Liste des actualités"
+        file: "content/news.json"
+        fields:
+          - { name: "items", label: "Actualités", widget: "list", label_singular: "actualité", summary: "{{title_fr}}", fields:
+              - { name: "date_fr", label: "Date / lieu (français)", widget: "string" }
+              - { name: "title_fr", label: "Titre (français)", widget: "string" }
+              - { name: "body_fr", label: "Texte (français)", widget: "text" }
+              - { name: "date_en", label: "Date / lieu (anglais) — optionnel", widget: "string", required: false }
+              - { name: "title_en", label: "Titre (anglais) — optionnel", widget: "string", required: false }
+              - { name: "body_en", label: "Texte (anglais) — optionnel", widget: "text", required: false }
+              - { name: "date_ar", label: "Date / lieu (arabe) — optionnel", widget: "string", required: false }
+              - { name: "title_ar", label: "Titre (arabe) — optionnel", widget: "string", required: false }
+              - { name: "body_ar", label: "Texte (arabe) — optionnel", widget: "text", required: false }
+              - { name: "date_tr", label: "Date / lieu (turc) — optionnel", widget: "string", required: false }
+              - { name: "title_tr", label: "Titre (turc) — optionnel", widget: "string", required: false }
+              - { name: "body_tr", label: "Texte (turc) — optionnel", widget: "text", required: false }
+            }
+
+  - name: "projects"
+    label: "Projets en cours"
+    label_singular: "projet"
+    files:
+      - name: "projects"
+        label: "Liste des projets"
+        file: "content/projects.json"
+        fields:
+          - { name: "items", label: "Projets", widget: "list", label_singular: "projet", summary: "{{title_fr}}", fields:
+              - { name: "image", label: "Photo du projet", widget: "image" }
+              - { name: "title_fr", label: "Titre (français)", widget: "string" }
+              - { name: "body_fr", label: "Description (français)", widget: "text" }
+              - { name: "title_en", label: "Titre (anglais) — optionnel", widget: "string", required: false }
+              - { name: "body_en", label: "Description (anglais) — optionnel", widget: "text", required: false }
+              - { name: "title_ar", label: "Titre (arabe) — optionnel", widget: "string", required: false }
+              - { name: "body_ar", label: "Description (arabe) — optionnel", widget: "text", required: false }
+              - { name: "title_tr", label: "Titre (turc) — optionnel", widget: "string", required: false }
+              - { name: "body_tr", label: "Description (turc) — optionnel", widget: "text", required: false }
+            }
+
+  - name: "gallery"
+    label: "Galerie photos"
+    label_singular: "photo"
+    files:
+      - name: "gallery"
+        label: "Photos de la galerie"
+        file: "content/gallery.json"
+        fields:
+          - { name: "items", label: "Photos", widget: "list", label_singular: "photo", summary: "{{alt_fr}}", fields:
+              - { name: "image", label: "Photo", widget: "image" }
+              - { name: "alt_fr", label: "Description (français)", widget: "string" }
+              - { name: "alt_en", label: "Description (anglais) — optionnel", widget: "string", required: false }
+              - { name: "alt_ar", label: "Description (arabe) — optionnel", widget: "string", required: false }
+              - { name: "alt_tr", label: "Description (turc) — optionnel", widget: "string", required: false }
+            }
