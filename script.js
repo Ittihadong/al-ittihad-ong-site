@@ -26,6 +26,11 @@
     return item[field + '_' + lang] || item[field + '_fr'] || '';
   }
 
+  function mdEsc(s){
+    // Body text is authored as markdown by editors; render it as formatted HTML.
+    if (window.marked) { return marked.parse(s == null ? '' : s); }
+    return esc(s); // marked.js not loaded (e.g. offline standalone copy) — fall back to plain text
+  }
   function esc(s){
     var d = document.createElement('div');
     d.innerText = s == null ? '' : s;
@@ -36,10 +41,20 @@
     var grid = document.getElementById('newsGrid');
     if(!grid || !cmsData.news) return;
     grid.innerHTML = cmsData.news.items.map(function(item){
+      var media = '';
+      if (item.images && item.images.length){
+        media += '<div class="news-media">' + item.images.map(function(src){
+          return '<img src="' + esc(src) + '" alt="" loading="lazy">';
+        }).join('') + '</div>';
+      }
+      if (item.video){
+        media += '<video class="news-video" src="' + esc(item.video) + '" controls preload="none"></video>';
+      }
       return '<article class="news-card">' +
+        media +
         '<span class="news-date">' + esc(pick(item,'date',lang)) + '</span>' +
         '<h3>' + esc(pick(item,'title',lang)) + '</h3>' +
-        '<p>' + esc(pick(item,'body',lang)) + '</p>' +
+        '<div class="news-body">' + mdEsc(pick(item,'body',lang)) + '</div>' +
         '</article>';
     }).join('');
   }
@@ -50,11 +65,13 @@
     grid.innerHTML = cmsData.projects.items.map(function(item){
       var title = pick(item,'title',lang);
       var waText = encodeURIComponent((WHATSAPP_PREFIX[lang]||WHATSAPP_PREFIX.fr) + ' ' + pick(item,'title','fr') + ' à AL-ITTIHAD ONG.');
+      var video = item.video ? '<video class="project-video" src="' + esc(item.video) + '" controls preload="none"></video>' : '';
       return '<div class="project-card">' +
         '<div class="project-image"><img src="' + esc(item.image) + '" alt="' + esc(title) + '"></div>' +
+        video +
         '<span class="project-status">' + (PROJECT_STATUS_TEXT[lang]||PROJECT_STATUS_TEXT.fr) + '</span>' +
         '<h3>' + esc(title) + '</h3>' +
-        '<p>' + esc(pick(item,'body',lang)) + '</p>' +
+        '<div class="project-body">' + mdEsc(pick(item,'body',lang)) + '</div>' +
         '<a href="https://wa.me/22967758078?text=' + waText + '" target="_blank" rel="noopener" class="btn btn-primary project-cta">' + (PROJECT_CTA_TEXT[lang]||PROJECT_CTA_TEXT.fr) + '</a>' +
         '</div>';
     }).join('');
@@ -64,6 +81,9 @@
     var grid = document.getElementById('galleryGrid');
     if(!grid || !cmsData.gallery) return;
     grid.innerHTML = cmsData.gallery.items.map(function(item){
+      if (item.video){
+        return '<video class="gallery-video" src="' + esc(item.video) + '" controls preload="none"></video>';
+      }
       return '<img src="' + esc(item.image) + '" alt="' + esc(pick(item,'alt',lang)) + '" loading="lazy">';
     }).join('');
   }
