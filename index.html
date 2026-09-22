@@ -547,5 +547,21 @@
 
 <script src="translations.js"></script>
 <script src="script.js"></script>
+
+<!-- Netlify Identity: lets an invite/recovery link (which opens this page with a
+     token in the URL) show the "set your password" popup, and keeps editors
+     logged in when they come back to the site. -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function (user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function () {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>
