@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AL-ITTIHAD ONG — Association Caritative de l'Union</title>
+<meta name="description" content="AL-ITTIHAD ONG, association caritative basée à Parakou, Bénin. Solidarité, aide alimentaire, programmes Qurbani, formation des imams et développement communautaire.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#projets" class="announce-bar">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 1 0 8.6 11.6A7 7 0 0 1 12 3z" fill="#E0A100"/></svg>
+  <span data-i18n="announce_text">Nos projets sont en cours — découvrez-les et soutenez-les dès aujourd'hui</span>
+  <span class="announce-arrow" aria-hidden="true">→</span>
+</a>
+<div class="unity-stripe" aria-hidden="true"></div>
+
+<div class="whatsapp-fab-wrap" id="whatsappWrap">
+  <button type="button" class="whatsapp-fab" id="whatsappFabBtn" aria-label="Contacter sur WhatsApp" aria-haspopup="true" aria-expanded="false">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="currentColor"><path d="M16.004 2.667c-7.363 0-13.333 5.97-13.333 13.333 0 2.353.615 4.646 1.783 6.666L2.667 29.333l6.85-1.797a13.27 13.27 0 0 0 6.487 1.65h.006c7.362 0 13.333-5.97 13.333-13.333 0-3.56-1.387-6.908-3.905-9.427a13.24 13.24 0 0 0-9.434-3.76zm0 24.4h-.005a11.05 11.05 0 0 1-5.634-1.542l-.404-.24-4.066 1.067 1.085-3.963-.263-.407a11.04 11.04 0 0 1-1.694-5.882c0-6.11 4.972-11.08 11.086-11.08 2.962 0 5.746 1.153 7.84 3.25a11.02 11.02 0 0 1 3.243 7.838c0 6.111-4.972 11.08-11.087 11.08zm6.078-8.297c-.333-.167-1.97-.972-2.276-1.083-.305-.111-.527-.167-.75.167-.222.333-.86 1.083-1.054 1.305-.194.223-.389.25-.722.084-.334-.167-1.408-.519-2.682-1.654-.992-.885-1.662-1.978-1.856-2.312-.194-.334-.02-.514.146-.68.15-.15.334-.39.5-.585.167-.194.223-.334.334-.556.111-.223.056-.417-.028-.584-.083-.167-.75-1.806-1.028-2.474-.27-.65-.545-.562-.75-.573l-.639-.011c-.222 0-.583.083-.888.417-.306.333-1.167 1.14-1.167 2.78 0 1.64 1.195 3.223 1.362 3.446.166.222 2.352 3.59 5.695 5.035.796.343 1.417.548 1.901.702.799.254 1.526.218 2.101.132.641-.096 1.97-.805 2.248-1.583.278-.778.278-1.445.194-1.584-.083-.139-.305-.222-.639-.389z"/></svg>
+  </button>
+  <div class="whatsapp-menu" id="whatsappMenu">
+    <p class="whatsapp-menu-title" data-i18n="whatsapp_choose">Choisissez un numéro WhatsApp</p>
+    <a href="https://wa.me/22967758078?text=Bonjour%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20AL-ITTIHAD%20ONG." target="_blank" rel="noopener" class="whatsapp-option">
+      <span class="whatsapp-flag">🇧🇯</span>
+      <span><span class="whatsapp-country" data-i18n="whatsapp_benin">Bénin</span><span class="whatsapp-number">+229 67 75 80 78</span></span>
+    </a>
+    <a href="https://wa.me/905387690829?text=Bonjour%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20AL-ITTIHAD%20ONG." target="_blank" rel="noopener" class="whatsapp-option">
+      <span class="whatsapp-flag">🇹🇷</span>
+      <span><span class="whatsapp-country" data-i18n="whatsapp_turkey">Turquie</span><span class="whatsapp-number">+90 538 769 08 29</span></span>
+    </a>
+    <a href="https://wa.me/96551768155?text=Bonjour%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20AL-ITTIHAD%20ONG." target="_blank" rel="noopener" class="whatsapp-option">
+      <span class="whatsapp-flag">🇰🇼</span>
+      <span><span class="whatsapp-country" data-i18n="whatsapp_kuwait">Koweït</span><span class="whatsapp-number">+965 5176 8155</span></span>
+    </a>
+  </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <img src="images/logo.jpg" alt="AL-ITTIHAD ONG" class="brand-logo">
+      <span class="brand-text">
+        <span class="brand-name">AL-ITTIHAD ONG <span class="brand-name-ar">جمعية الاتحاد الخيرية</span></span>
+        <span class="brand-tagline" data-i18n="brand_tagline">Association Caritative de l'Union</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#top" data-i18n="nav_home">Accueil</a>
+      <a href="#apropos" data-i18n="nav_about">Qui sommes-nous</a>
+      <a href="#actions" data-i18n="nav_actions">Nos actions</a>
+      <a href="#partenaires" data-i18n="nav_partners">Partenaires</a>
+      <a href="#galerie" data-i18n="nav_gallery">Galerie</a>
+      <a href="#actualites" data-i18n="nav_news">Actualités</a>
+      <a href="#reseaux" data-i18n="nav_social">Réseaux sociaux</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+      <a href="#don" data-i18n="nav_donate" class="nav-cta">Faire un don</a>
+    </nav>
+
+    <div class="header-controls">
+      <div class="lang-switch" role="group" aria-label="Langue">
+        <button type="button" data-lang="fr" class="lang-btn active">Français</button>
+        <button type="button" data-lang="en" class="lang-btn">English</button>
+        <button type="button" data-lang="ar" class="lang-btn lang-btn-ar">العربية</button>
+        <button type="button" data-lang="tr" class="lang-btn">Türkçe</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-media">
+    <img src="images/hero_main.jpg" alt="Équipe AL-ITTIHAD ONG signant un accord de partenariat">
+    <div class="hero-scrim"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow" data-i18n="hero_eyebrow">Parakou · Bénin — depuis mars 2020</p>
+    <h1 data-i18n="hero_title">Œuvrer, ensemble,<br>pour le bien-être des populations</h1>
+    <p class="hero-sub" data-i18n="hero_sub">AL-ITTIHAD ONG lutte contre la pauvreté et la faim, promeut la santé, et construit une société solidaire au Bénin, aux côtés de partenaires internationaux et béninois.</p>
+    <div class="hero-actions">
+      <a href="#don" class="btn btn-primary" data-i18n="hero_cta_donate">Faire un don</a>
+      <a href="#actions" class="btn btn-ghost" data-i18n="hero_cta_actions">Découvrir nos actions</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CREDIBILITY / IMPACT STRIP ===== -->
+<section class="credibility">
+  <div class="credibility-inner">
+    <div class="cred-item">
+      <span class="cred-value">2020</span>
+      <span class="cred-label" data-i18n="cred_since_label">Fondation</span>
+    </div>
+    <div class="cred-sep" aria-hidden="true"></div>
+    <div class="cred-item">
+      <span class="cred-value">9</span>
+      <span class="cred-label" data-i18n="cred_domains_label">Domaines d'intervention</span>
+    </div>
+    <div class="cred-sep" aria-hidden="true"></div>
+    <div class="cred-item">
+      <span class="cred-value" data-i18n="cred_projects_value">+100</span>
+      <span class="cred-label" data-i18n="cred_projects_label">Réalisations</span>
+    </div>
+    <div class="cred-sep" aria-hidden="true"></div>
+    <div class="cred-item">
+      <span class="cred-value" data-i18n="cred_beneficiaries_value">+1 000 000</span>
+      <span class="cred-label" data-i18n="cred_beneficiaries_label">Bénéficiaires</span>
+    </div>
+    <div class="cred-sep" aria-hidden="true"></div>
+    <div class="cred-item">
+      <span class="cred-value">ONG-326089</span>
+      <span class="cred-label" data-i18n="cred_reg_label">Récépissé officiel</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST / PARTNER LOGOS STRIP ===== -->
+<section class="trust-strip">
+  <div class="section-inner">
+    <p class="trust-label" data-i18n="trust_label">Ils nous accompagnent</p>
+    <div class="trust-logos">
+      <img src="images/kizilay_logo.jpg" alt="Türk Kızılay" class="trust-logo">
+      <img src="images/dosteli_logo.jpg" alt="Dost Eli Derneği" class="trust-logo">
+      <img src="images/medeniyet_logo.jpg" alt="Medeniyet" class="trust-logo">
+      <img src="images/insanvakfi_logo.png" alt="İnsan Vakfı" class="trust-logo">
+      <img src="images/croixrouge_logo.png" alt="Croix-Rouge Béninoise" class="trust-logo">
+    </div>
+  </div>
+</section>
+
+<!-- ===== A PROPOS ===== -->
+<section id="apropos" class="section about">
+  <div class="section-inner about-grid">
+    <div class="about-text">
+      <h2 data-i18n="about_title">Qui sommes-nous</h2>
+      <p data-i18n="about_p1">AL-ITTIHAD ONG est une organisation non gouvernementale à caractère caritatif, créée le 15 février 2026 à Parakou et reconnue par le Ministère de l'Intérieur et de la Sécurité Publique du Bénin. Notre devise résume notre engagement : Solidarité, Égalité, Fraternité.</p>
+      <p data-i18n="about_p2">Nous œuvrons pour le bien-être des populations du Bénin et au-delà, en respectant la laïcité de notre pays tout en répondant aux besoins spirituels et sociaux de nos communautés.</p>
+      <div class="pillars">
+        <div class="pillar">
+          <span class="pillar-num">01</span>
+          <p data-i18n="pillar_1">Lutter contre la pauvreté, la misère, le manque d'eau et la faim</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">02</span>
+          <p data-i18n="pillar_2">Promouvoir la santé et prévenir les maladies évitables</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">03</span>
+          <p data-i18n="pillar_3">Créer un environnement favorable à l'émergence économique des populations</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">04</span>
+          <p data-i18n="pillar_4">Réaliser des infrastructures religieuses, dans le respect des textes de notre pays</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DOMAINES D'INTERVENTION ===== -->
+<section id="domaines" class="section domains-section">
+  <div class="section-inner">
+    <h2 data-i18n="domains_title">Nos domaines d'intervention</h2>
+    <p class="section-lead" data-i18n="domains_lead">AL-ITTIHAD ONG intervient sur neuf grands domaines, au plus près des besoins des populations du Bénin.</p>
+    <div class="domains-grid">
+      <div class="domain-item" role="button" tabindex="0" aria-expanded="false">
+        <div class="domain-image"><img src="images/iftar_children.jpg" alt="Iftar communautaire pendant le Ramadan" loading="lazy"></div>
+        <div class="domain-item-head">
+          <div class="domain-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v3M12 3a5 5 0 0 0-5 5c0 2 1 3 1 5a4 4 0 0 0 8 0c0-2 1-3 1-5a5 5 0 0 0-5-5z"/><path d="M9 21h6"/></svg></div>
+          <p class="domain-title" data-i18n="domain1">Ramadan : Iftars et colis alimentaires</p>
+          <svg class="domain-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <p class="domain-detail" data-i18n="domain1_detail"></p>
+      </div>
+      <div class="domain-item" role="button" tabindex="0" aria-expanded="false">
+        <div class="domain-image"><img src="images/tabaski_pile_banners.jpg" alt="Distribution de viande de Tabaski" loading="lazy"></div>
+        <div class="domain-item-head">
+          <div class="domain-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.4 5.5L20 8.3l-4.2 3.8L17 18l-5-3-5 3 1.2-5.9L4 8.3l5.6-.8z"/></svg></div>
+          <p class="domain-title" data-i18n="domain2">Tabaski (Kurban) : sacrifice et distribution</p>
+          <svg class="domain-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <p class="domain-detail" data-i18n="domain2_detail"></p>
+      </div>
+      <div class="domain-item" role="button" tabindex="0" aria-expanded="false">
+        <div class="domain-image"><img src="images/orphelinat_sabouyo_2.jpg" alt="Visite aux enfants de l'orphelinat Sabouyo de Grafep" loading="lazy"></div>
+        <div class="domain-item-head">
+          <div class="domain-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="7" r="3"/><path d="M4 21v-1a5 5 0 0 1 5-5h0a5 5 0 0 1 5 5v1"/><path d="M17 8.5c1-1 1-2.5 0-3.5M19.5 11c1.8-1.3 1.8-4 0-5.5"/></svg></div>
+          <p class="domain-title" data-i18n="domain3">Soutien et parrainage des orphelins</p>
+          <svg class="domain-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <p class="domain-detail" data-i18n="domain3_detail"></p>
+      </div>
+      <div class="domain-item" role="button" tabindex="0" aria-expanded="false">
+        <div class="domain-image"><img src="images/kizilay_vest.jpg" alt="Aide sanitaire avec nos partenaires" loading="lazy"></div>
+        <div class="domain-item-head">
+          <div class="domain-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/><path d="M9 12h2l1-2 2 4 1-2h2"/></svg></div>
+          <p class="domain-title" data-i18n="domain4">Aide sanitaire (hôpitaux, cataracte, santé)</p>
+          <svg class="domain-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <p class="domain-detail" data-i18n="domain4_detail"></p>
+      </div>
+      <div class="domain-item" role="button" tabindex="0" aria-expanded="false">
+        <div class="domain-image"><img src="images/water_tower_inauguration.jpg" alt="Château d'eau inauguré dans un village" loading="lazy"></div>
+        <div class="domain-item-head">
+          <div class="domain-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3S6 10 6 14.5a6 6 0 0 0 12 0C18 10 12 3 12 3z"/></svg></div>
+          <p class="domain-title" data-i18n="domain5">Eau potable : pompes et forages</p>
+          <svg class="domain-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <p class="domain-detail" data-i18n="domain5_detail"></p>
+      </div>
+      <div class="domain-item" role="button" tabindex="0" aria-expanded="false">
+        <div class="domain-image"><img src="images/school_building.jpg" alt="École soutenue par AL-ITTIHAD ONG" loading="lazy"></div>
+        <div class="domain-item-head">
+          <div class="domain-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/><path d="M12 2.5v2"/></svg></div>
+          <p class="domain-title" data-i18n="domain6">Construction de mosquées et écoles</p>
+          <svg class="domain-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <p class="domain-detail" data-i18n="domain6_detail"></p>
+      </div>
+      <div class="domain-item" role="button" tabindex="0" aria-expanded="false">
+        <div class="domain-image"><img src="images/food_kits_distribution.jpg" alt="Kits alimentaires (riz, huile, sucre) prêts pour la distribution" loading="lazy"></div>
+        <div class="domain-item-head">
+          <div class="domain-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="10" width="18" height="9" rx="1"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></svg></div>
+          <p class="domain-title" data-i18n="domain7">Aide alimentaire d'urgence contre la famine</p>
+          <svg class="domain-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <p class="domain-detail" data-i18n="domain7_detail"></p>
+      </div>
+      <div class="domain-item" role="button" tabindex="0" aria-expanded="false">
+        <div class="domain-image"><img src="images/team_partnership_group.jpg" alt="Accompagnement des populations locales" loading="lazy"></div>
+        <div class="domain-item-head">
+          <div class="domain-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l6-6 4 4 8-8"/><path d="M21 7v6M21 7h-6"/></svg></div>
+          <p class="domain-title" data-i18n="domain8">Entrepreneuriat des jeunes hommes et femmes</p>
+          <svg class="domain-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <p class="domain-detail" data-i18n="domain8_detail"></p>
+      </div>
+      <div class="domain-item" role="button" tabindex="0" aria-expanded="false">
+        <div class="domain-image"><img src="images/mosque_handshake2.jpg" alt="Rencontre à la mosquée" loading="lazy"></div>
+        <div class="domain-item-head">
+          <div class="domain-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12s3.5-7 9-7 9 7 9 7-3.5 7-9 7-9-7-9-7z"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+          <p class="domain-title" data-i18n="domain9">Prédication et appel à l'islam (Daawa)</p>
+          <svg class="domain-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <p class="domain-detail" data-i18n="domain9_detail"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NOS ACTIONS ===== -->
+<section id="actions" class="section actions-section">
+  <div class="section-inner">
+    <h2 data-i18n="actions_title">Nos actions</h2>
+    <p class="section-lead" data-i18n="actions_lead">Des programmes concrets, menés sur le terrain avec nos partenaires, au service des familles du Bénin.</p>
+
+    <div class="action-row">
+      <div class="action-media">
+        <img src="images/handover_ceremony1.jpg" alt="Programme Qurbani avec le Croissant-Rouge Turc">
+      </div>
+      <div class="action-text">
+        <span class="action-tag" data-i18n="action1_tag">Programme Qurbani</span>
+        <h3 data-i18n="action1_title">Sacrifice et distribution de viande — Kurban Bayramı</h3>
+        <p data-i18n="action1_body">En partenariat avec le Croissant-Rouge Turc (Türk Kızılay), AL-ITTIHAD ONG a coordonné l'approvisionnement, l'abattage rituel et la distribution de centaines de bêtes lors de la fête du sacrifice, au bénéfice direct des familles les plus démunies de la région.</p>
+      </div>
+    </div>
+
+    <div class="action-row reverse">
+      <div class="action-media">
+        <img src="images/food_kits_distribution.jpg" alt="Kits alimentaires (riz, huile, sucre) prêts pour la distribution aux familles">
+      </div>
+      <div class="action-text">
+        <span class="action-tag" data-i18n="action2_tag">Aide alimentaire</span>
+        <h3 data-i18n="action2_title">Distribution de vivres aux familles vulnérables</h3>
+        <p data-i18n="action2_body">Des centaines de sacs de vivres sont distribués directement dans les villages du Bénin, en coordination avec les autorités locales, pour soulager la faim et la précarité des ménages les plus exposés.</p>
+      </div>
+    </div>
+
+    <div class="action-row">
+      <div class="action-media">
+        <img src="images/imam_training_2025.jpg" alt="Formation des imams de mosquée, Bénin 2025 — avec Dost Eli Derneği">
+      </div>
+      <div class="action-text">
+        <span class="action-tag" data-i18n="action3_tag">Formation religieuse</span>
+        <h3 data-i18n="action3_title">Formation des imams de mosquée — Bénin 2025</h3>
+        <p data-i18n="action3_body">Aux côtés de l'association turque Dost Eli Derneği, AL-ITTIHAD ONG a co-organisé à Bohicon une session de formation destinée aux imams, pour renforcer l'encadrement religieux dans le respect de la laïcité béninoise.</p>
+      </div>
+    </div>
+    <div class="action-row reverse">
+      <div class="action-media">
+        <img src="images/community_meeting.jpg" alt="Réunion communautaire avec Dost Eli Derneği">
+      </div>
+      <div class="action-text">
+        <span class="action-tag" data-i18n="action4_tag">Soutien communautaire</span>
+        <h3 data-i18n="action4_title">Visites de terrain et accompagnement des mosquées</h3>
+        <p data-i18n="action4_body">Au-delà des grands programmes, AL-ITTIHAD ONG accompagne Dost Eli Derneği dans ses visites de terrain : rencontres avec les imams, réunions communautaires, classes coraniques pour les enfants et suivi des mosquées soutenues par nos partenaires internationaux.</p>
+      </div>
+    </div>
+
+    <div class="action-row">
+      <div class="action-media">
+        <img src="images/water_tower_inauguration.jpg" alt="Inauguration d'un château d'eau dans un village du Bénin">
+      </div>
+      <div class="action-text">
+        <span class="action-tag" data-i18n="action5_tag">Accès à l'eau</span>
+        <h3 data-i18n="action5_title">Forages et châteaux d'eau pour les villages</h3>
+        <p data-i18n="action5_body">AL-ITTIHAD ONG réalise des forages et construit des châteaux d'eau dans les villages du Bénin, apportant l'eau potable à des centaines de familles qui devaient auparavant parcourir de longues distances pour s'approvisionner.</p>
+      </div>
+    </div>
+
+    <div class="action-row reverse">
+      <div class="action-media">
+        <img src="images/iftar_children.jpg" alt="Iftar communautaire pour les enfants pendant le Ramadan">
+      </div>
+      <div class="action-text">
+        <span class="action-tag" data-i18n="action6_tag">Ramadan</span>
+        <h3 data-i18n="action6_title">Iftars communautaires et kits alimentaires</h3>
+        <p data-i18n="action6_body">Chaque année pendant le Ramadan, AL-ITTIHAD ONG organise des iftars collectifs pour des centaines d'enfants et distribue des kits alimentaires (riz, huile, tomate) aux familles pour les aider à traverser le mois de jeûne dans la dignité.</p>
+      </div>
+    </div>
+    <div class="action-row">
+      <div class="action-media">
+        <img src="images/school1.jpg" alt="Élèves d'une école soutenue par AL-ITTIHAD ONG, Bénin">
+      </div>
+      <div class="action-text">
+        <span class="action-tag" data-i18n="action7_tag">Éducation</span>
+        <h3 data-i18n="action7_title">Soutien aux écoles coraniques et laïques</h3>
+        <p data-i18n="action7_body">AL-ITTIHAD ONG accompagne des écoles du Bénin, à travers la construction et l'équipement de salles de classe, pour donner aux enfants les moyens de poursuivre leur scolarité dans de bonnes conditions.</p>
+      </div>
+    </div>
+
+    <div class="action-row reverse">
+      <div class="action-media">
+        <img src="images/orphelinat_sabouyo.jpg" alt="Visite de l'orphelinat Sabouyo de Grafep, Bénin">
+      </div>
+      <div class="action-text">
+        <span class="action-tag" data-i18n="action8_tag">Soutien aux orphelins</span>
+        <h3 data-i18n="action8_title">Parrainage et visites aux enfants orphelins</h3>
+        <p data-i18n="action8_body">AL-ITTIHAD ONG identifie les enfants orphelins des villages et structures d'accueil du Bénin, comme l'orphelinat Sabouyo de Grafep, et organise leur parrainage avec le soutien de nos partenaires internationaux.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARTENAIRES ===== -->
+<section id="partenaires" class="section partners-section">
+  <div class="section-inner">
+    <h2 data-i18n="partners_title">Nos partenaires</h2>
+    <p class="section-lead" data-i18n="partners_lead">Notre action locale s'appuie sur des partenariats internationaux solides.</p>
+    <div class="partners-grid">
+      <div class="partner-card">
+        <img class="partner-logo-img" src="images/kizilay_logo.jpg" alt="Türk Kızılay">
+        <p data-i18n="partner1_body">Le Croissant-Rouge Turc, partenaire de notre programme annuel de sacrifice (Qurbani), assurant approvisionnement, abattage conforme et distribution aux familles démunies.</p>
+      </div>
+      <div class="partner-card">
+        <img class="partner-logo-img" src="images/dosteli_logo.jpg" alt="Dost Eli Derneği">
+        <h3>Dost Eli Derneği</h3>
+        <p data-i18n="partner2_body">Association caritative turque, partenaire d'AL-ITTIHAD ONG pour la formation des imams, mais aussi l'aide alimentaire (Ramadan, Tabaski), le soutien aux orphelins, l'aide sanitaire, les points d'eau, la construction de mosquées et d'écoles, et l'entrepreneuriat des jeunes.</p>
+      </div>
+      <div class="partner-card">
+        <img class="partner-logo-img" src="images/medeniyet_logo.jpg" alt="Medeniyet Uluslararası İnsani Yardım Derneği">
+        <h3>Medeniyet Uluslararası İnsani Yardım Derneği</h3>
+        <p data-i18n="partner3_body">Association humanitaire internationale turque, partenaire d'AL-ITTIHAD ONG dans ses programmes d'aide humanitaire au Bénin.</p>
+      </div>
+      <div class="partner-card">
+        <img class="partner-logo-img" src="images/insanvakfi_logo.png" alt="İnsan Vakfı">
+        <h3>İnsan Vakfı</h3>
+        <p data-i18n="partner4_body">Fondation turque partenaire d'AL-ITTIHAD ONG, engagée à nos côtés pour le soutien aux populations vulnérables du Bénin.</p>
+      </div>
+      <div class="partner-card">
+        <img class="partner-logo-img" src="images/croixrouge_logo.png" alt="Croix-Rouge Béninoise">
+        <h3 data-i18n="partner5_name">Croix-Rouge Béninoise</h3>
+        <p data-i18n="partner5_body">Partenaire béninois d'AL-ITTIHAD ONG, mobilisé à nos côtés pour l'aide humanitaire et l'assistance aux populations vulnérables du Bénin.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERIE ===== -->
+<section id="galerie" class="section gallery-section">
+  <div class="section-inner">
+    <h2 data-i18n="gallery_title">Galerie</h2>
+    <p class="section-lead" data-i18n="gallery_lead">Quelques images de nos actions et de nos rencontres avec nos partenaires.</p>
+    <div class="gallery-grid">
+      <img src="images/cow_market1.jpg" alt="Sélection du bétail pour le Qurbani">
+      <img src="images/distrib_bags4.jpg" alt="Sacs de vivres prêts pour distribution">
+      <img src="images/team_banner.jpg" alt="Rencontre avec la délégation turque">
+      <img src="images/handover_ceremony2.jpg" alt="Remise des dons Kurban Bayramı">
+      <img src="images/cow_market2.jpg" alt="Marché à bétail, Bénin">
+      <img src="images/distrib_bags2.jpg" alt="Distribution de vivres au village">
+      <img src="images/team_greet1.jpg" alt="Accueil des invités d'honneur">
+      <img src="images/kizilay_vest.jpg" alt="Équipement Türk Kızılay">
+      <img src="images/mosque_visit1.jpg" alt="Visite de terrain à la mosquée Fatma Sari, Bénin">
+      <img src="images/mosque_handshake.jpg" alt="Rencontre avec l'imam de la mosquée Nursan Traoré">
+      <img src="images/community_meeting.jpg" alt="Réunion communautaire avec Dost Eli Derneği">
+      <img src="images/quran_class.jpg" alt="Classe coranique pour les enfants">
+      <img src="images/karagul_celebration.jpg" alt="Fête avec les enfants à la mosquée Karagül Ailesi">
+      <img src="images/nursan_celebration.jpg" alt="Célébration des enfants à la mosquée Nursan">
+      <img src="images/fatma_sari_celebration.jpg" alt="Distribution de ballons aux enfants, mosquée Fatma Sari">
+      <img src="images/mosque_new1.jpg" alt="Nouvelle mosquée construite par AL-ITTIHAD ONG">
+      <img src="images/mosque_new2.jpg" alt="Mosquée et château d'eau solaire">
+      <img src="images/water_tower_construction.jpg" alt="Construction d'un château d'eau">
+      <img src="images/borehole_drilling.jpg" alt="Forage d'un point d'eau">
+      <img src="images/aerial_complex.jpg" alt="Vue aérienne d'un complexe religieux achevé">
+      <img src="images/ramadan_kits.jpg" alt="Kits alimentaires distribués pendant le Ramadan">
+      <img src="images/school_building.jpg" alt="École soutenue par AL-ITTIHAD ONG, Bénin">
+      <img src="images/mosque_handshake2.jpg" alt="Rencontre à la mosquée avec les responsables religieux">
+      <img src="images/tabaski_elderly_couple.jpg" alt="Distribution de viande de Tabaski à des personnes âgées">
+      <img src="images/tabaski_pile_banners.jpg" alt="Colis de viande prêts pour la distribution de Tabaski">
+      <img src="images/eid_prayer.jpg" alt="Prière communautaire de l'Aïd">
+      <img src="images/team_partnership_group.jpg" alt="Équipe AL-ITTIHAD ONG et partenaires internationaux sur le terrain">
+      <img src="images/school_girls.jpg" alt="Élèves d'une école soutenue par AL-ITTIHAD ONG, Bénin">
+      <img src="images/cattle_check.jpg" alt="Contrôle qualité du bétail pour le programme Qurbani">
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACTUALITES ===== -->
+<section id="actualites" class="section news-section">
+  <div class="section-inner">
+    <h2 data-i18n="news_title">Actualités</h2>
+    <div class="news-grid">
+      <article class="news-card">
+        <span class="news-date" data-i18n="news1_date">2026 — Aïd al-Adha</span>
+        <h3 data-i18n="news1_title">Programme de Sacrifice 2026 lancé avec Türk Kızılay</h3>
+        <p data-i18n="news1_body">Un accord de coopération a été signé pour la fourniture, l'abattage et la distribution de bêtes destinées au sacrifice, au bénéfice des familles du Bénin.</p>
+      </article>
+      <article class="news-card">
+        <span class="news-date" data-i18n="news2_date">Juillet 2025 — Bohicon</span>
+        <h3 data-i18n="news2_title">Formation des imams de mosquée, en partenariat avec Dost Eli</h3>
+        <p data-i18n="news2_body">Une session de formation religieuse a réuni des imams venus de plusieurs localités, avec le soutien de l'association turque Dost Eli Derneği.</p>
+      </article>
+      <article class="news-card">
+        <span class="news-date" data-i18n="news3_date">30 août 2026 — Cotonou</span>
+        <h3 data-i18n="news3_title">Récépissé de déclaration d'existence délivré</h3>
+        <p data-i18n="news3_body">Le Ministère de l'Intérieur et de la Sécurité Publique a délivré à AL-ITTIHAD ONG son récépissé officiel (N° ONG-326089), confirmant sa personnalité juridique.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESEAUX SOCIAUX ===== -->
+<section id="reseaux" class="section social-section">
+  <div class="section-inner">
+    <h2 data-i18n="social_title">Suivez-nous</h2>
+    <p class="section-lead" data-i18n="social_lead">Retrouvez AL-ITTIHAD ONG sur les réseaux sociaux pour suivre nos actions au quotidien.</p>
+    <div class="partners-grid social-grid">
+      <a class="partner-card social-card" href="https://www.facebook.com/share/1DrvUCThfH/" target="_blank" rel="noopener">
+        <div class="text-mark social-mark">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </div>
+        <h3>Facebook</h3>
+        <p data-i18n="social_facebook_body">Actualités, photos et vidéos de nos actions sur le terrain.</p>
+      </a>
+      <a class="partner-card social-card" href="https://tiktok.com/@al.ittihad.ong" target="_blank" rel="noopener">
+        <div class="text-mark social-mark">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-3.02-3.02h-3.1v13.3a2.6 2.6 0 1 1-1.83-2.48V10.5a5.7 5.7 0 1 0 4.93 5.65V9.4a7.16 7.16 0 0 0 4.02 1.23V7.53a4.27 4.27 0 0 1-1-.05z"/></svg>
+        </div>
+        <h3>TikTok</h3>
+        <p data-i18n="social_tiktok_body">Des vidéos courtes pour découvrir nos activités au Bénin.</p>
+      </a>
+      <a class="partner-card social-card" href="https://www.instagram.com/al.ittihad.ong" target="_blank" rel="noopener">
+        <div class="text-mark social-mark">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.24 2.22.41.56.21.96.47 1.38.89.42.42.68.82.89 1.38.17.42.36 1.05.41 2.22.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.8-.41 2.22-.21.56-.47.96-.89 1.38-.42.42-.82.68-1.38.89-.42.17-1.05.36-2.22.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.24-2.22-.41-.56-.21-.96-.47-1.38-.89-.42-.42-.68-.82-.89-1.38-.17-.42-.36-1.05-.41-2.22C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.8.41-2.22.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.17 1.05-.36 2.22-.41C8.42 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.5.01-4.73.07-.96.04-1.48.2-1.82.34-.46.18-.78.39-1.13.73-.34.35-.55.67-.73 1.13-.14.34-.3.86-.34 1.82C3.19 8.5 3.18 8.85 3.18 12s.01 3.5.07 4.73c.04.96.2 1.48.34 1.82.18.46.39.78.73 1.13.35.34.67.55 1.13.73.34.14.86.3 1.82.34 1.23.06 1.58.07 4.73.07s3.5-.01 4.73-.07c.96-.04 1.48-.2 1.82-.34.46-.18.78-.39 1.13-.73.34-.35.55-.67.73-1.13.14-.34.3-.86.34-1.82.06-1.23.07-1.58.07-4.73s-.01-3.5-.07-4.73c-.04-.96-.2-1.48-.34-1.82a3.03 3.03 0 0 0-.73-1.13 3.03 3.03 0 0 0-1.13-.73c-.34-.14-.86-.3-1.82-.34C15.5 4.01 15.15 4 12 4zm0 3.65a4.35 4.35 0 1 1 0 8.7 4.35 4.35 0 0 1 0-8.7zm0 1.8a2.55 2.55 0 1 0 0 5.1 2.55 2.55 0 0 0 0-5.1zm4.55-2a1.02 1.02 0 1 1 0 2.04 1.02 1.02 0 0 1 0-2.04z"/></svg>
+        </div>
+        <h3>Instagram</h3>
+        <p data-i18n="social_instagram_body">Nos plus belles images, en un coup d'œil.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DON ===== -->
+<!-- ===== PROJETS EN COURS ===== -->
+<section id="projets" class="section projects-section">
+  <div class="section-inner">
+    <h2 data-i18n="projects_title">Projets en cours</h2>
+    <p class="section-lead" data-i18n="projects_lead">Ces projets sont actuellement en cours de réalisation ou de collecte de fonds. Votre soutien peut faire la différence dès aujourd'hui.</p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-image"><img src="images/water_tower_construction.jpg" alt="Forage et château d'eau en construction"></div>
+        <span class="project-status" data-i18n="project_status">Projet en cours</span>
+        <h3 data-i18n="project1_title">Forage et château d'eau</h3>
+        <p data-i18n="project1_body">Un nouveau point d'eau potable est en cours de construction pour desservir un village du Bénin qui manque cruellement d'eau.</p>
+        <a href="https://wa.me/22967758078?text=Bonjour%2C%20je%20souhaite%20soutenir%20le%20projet%20Forage%20et%20ch%C3%A2teau%20d%27eau%20%C3%A0%20AL-ITTIHAD%20ONG." target="_blank" rel="noopener" class="btn btn-primary project-cta" data-i18n="project_cta">Soutenir ce projet</a>
+      </div>
+      <div class="project-card">
+        <div class="project-image"><img src="images/mosque_new2.jpg" alt="Construction d'une mosquée"></div>
+        <span class="project-status" data-i18n="project_status">Projet en cours</span>
+        <h3 data-i18n="project2_title">Construction d'une mosquée</h3>
+        <p data-i18n="project2_body">Une mosquée est en cours de construction pour offrir à une communauté un lieu de culte digne et durable.</p>
+        <a href="https://wa.me/22967758078?text=Bonjour%2C%20je%20souhaite%20soutenir%20le%20projet%20Construction%20d%27une%20mosqu%C3%A9e%20%C3%A0%20AL-ITTIHAD%20ONG." target="_blank" rel="noopener" class="btn btn-primary project-cta" data-i18n="project_cta">Soutenir ce projet</a>
+      </div>
+      <div class="project-card">
+        <div class="project-image"><img src="images/school_building.jpg" alt="Construction d'une école"></div>
+        <span class="project-status" data-i18n="project_status">Projet en cours</span>
+        <h3 data-i18n="project3_title">Construction d'une école</h3>
+        <p data-i18n="project3_body">Des salles de classe sont en cours de construction pour permettre à davantage d'enfants du Bénin d'accéder à l'éducation.</p>
+        <a href="https://wa.me/22967758078?text=Bonjour%2C%20je%20souhaite%20soutenir%20le%20projet%20Construction%20d%27une%20%C3%A9cole%20%C3%A0%20AL-ITTIHAD%20ONG." target="_blank" rel="noopener" class="btn btn-primary project-cta" data-i18n="project_cta">Soutenir ce projet</a>
+      </div>
+      <div class="project-card">
+        <div class="project-image"><img src="images/iftar_children.jpg" alt="Iftar du Ramadan"></div>
+        <span class="project-status" data-i18n="project_status">Projet en cours</span>
+        <h3 data-i18n="project4_title">Iftar du Ramadan</h3>
+        <p data-i18n="project4_body">Une collecte est ouverte pour financer les iftars collectifs offerts aux enfants et aux familles durant tout le mois de Ramadan.</p>
+        <a href="https://wa.me/22967758078?text=Bonjour%2C%20je%20souhaite%20soutenir%20le%20projet%20Iftar%20du%20Ramadan%20%C3%A0%20AL-ITTIHAD%20ONG." target="_blank" rel="noopener" class="btn btn-primary project-cta" data-i18n="project_cta">Soutenir ce projet</a>
+      </div>
+      <div class="project-card">
+        <div class="project-image"><img src="images/distrib_bags2.jpg" alt="Distribution de colis alimentaires"></div>
+        <span class="project-status" data-i18n="project_status">Projet en cours</span>
+        <h3 data-i18n="project5_title">Distribution de colis alimentaires</h3>
+        <p data-i18n="project5_body">Une collecte est ouverte pour constituer et distribuer des colis alimentaires aux familles les plus démunies du Bénin.</p>
+        <a href="https://wa.me/22967758078?text=Bonjour%2C%20je%20souhaite%20soutenir%20le%20projet%20Distribution%20de%20colis%20alimentaires%20%C3%A0%20AL-ITTIHAD%20ONG." target="_blank" rel="noopener" class="btn btn-primary project-cta" data-i18n="project_cta">Soutenir ce projet</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="don" class="section donate-section">
+  <div class="section-inner">
+    <h2 data-i18n="donate_title">Faire un don</h2>
+    <p class="section-lead donate-lead" data-i18n="donate_body">Votre contribution, même modeste, permet d'apporter de la nourriture, de l'eau et du soutien à des familles qui en ont besoin. Merci de faire partie de cette chaîne de solidarité.</p>
+
+    <div class="giving-grid">
+      <div class="giving-card">
+        <div class="giving-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 8.6c0-2.3-1.9-4.1-4.2-4.1-1.3 0-2.5.6-3.3 1.6l-.3.4-.3-.4c-.8-1-2-1.6-3.3-1.6-2.3 0-4.2 1.8-4.2 4.1 0 4.6 7.8 10.4 7.8 10.4s7.8-5.8 7.8-10.4z"/></svg></div>
+        <h3 data-i18n="give_sadaqah_title">Sadaqah — Don général</h3>
+        <p data-i18n="give_sadaqah_body">Une aumône volontaire pour soutenir l'ensemble de nos actions : eau, éducation, santé, aide alimentaire.</p>
+        <a href="https://wa.me/22967758078?text=Bonjour%2C%20je%20souhaite%20faire%20un%20don%20%28Sadaqah%29%20%C3%A0%20AL-ITTIHAD%20ONG." target="_blank" rel="noopener" class="btn btn-primary giving-cta" data-i18n="give_sadaqah_cta">Verser ma Sadaqah</a>
+      </div>
+      <div class="giving-card">
+        <div class="giving-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M7 7l-4 8a4 4 0 0 0 8 0l-4-8zM17 7l-4 8a4 4 0 0 0 8 0l-4-8zM4 7h16M9 4h6"/></svg></div>
+        <h3 data-i18n="give_zakat_title">Zakat</h3>
+        <p data-i18n="give_zakat_body">Versez votre Zakat pour qu'elle soit redistribuée aux ayants droit, dans le respect des prescriptions islamiques.</p>
+        <a href="https://wa.me/22967758078?text=Bonjour%2C%20je%20souhaite%20verser%20ma%20Zakat%20%C3%A0%20AL-ITTIHAD%20ONG." target="_blank" rel="noopener" class="btn btn-primary giving-cta" data-i18n="give_zakat_cta">Verser ma Zakat</a>
+      </div>
+      <div class="giving-card">
+        <div class="giving-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.4 5.5L20 8.3l-4.2 3.8L17 18l-5-3-5 3 1.2-5.9L4 8.3l5.6-.8z"/></svg></div>
+        <h3 data-i18n="give_qurbani_title">Qurbani (Tabaski)</h3>
+        <p data-i18n="give_qurbani_body">Participez au sacrifice annuel et à la distribution de viande aux familles démunies à l'occasion de la Tabaski.</p>
+        <a href="https://wa.me/22967758078?text=Bonjour%2C%20je%20souhaite%20contribuer%20au%20Qurbani%20%28Tabaski%29%20%C3%A0%20AL-ITTIHAD%20ONG." target="_blank" rel="noopener" class="btn btn-primary giving-cta" data-i18n="give_qurbani_cta">Contribuer au Qurbani</a>
+      </div>
+    </div>
+
+    <div class="donate-general">
+      <div class="donate-momo">
+        <span class="momo-badge">MTN MoMo</span>
+        <span class="momo-number">+229 67 75 80 78</span>
+      </div>
+      <p class="donate-note" data-i18n="donate_note">Précisez « Don AL-ITTIHAD ONG » dans le motif du transfert. Pour toute question, contactez-nous sur WhatsApp.</p>
+      <div class="donate-actions">
+        <a href="https://wa.me/22967758078?text=Bonjour%2C%20je%20souhaite%20faire%20un%20don%20%C3%A0%20AL-ITTIHAD%20ONG." target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="donate_whatsapp">Faire un don via WhatsApp</a>
+        <a href="mailto:ong.ittihad@gmail.com?subject=Don%20AL-ITTIHAD%20ONG&body=Bonjour%2C%0D%0AJe%20souhaite%20faire%20un%20don%20%C3%A0%20AL-ITTIHAD%20ONG.%20Merci%20de%20me%20recontacter." class="btn btn-ghost" data-i18n="donate_email">Faire un don par email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section contact-section">
+  <div class="section-inner contact-grid">
+    <div>
+      <h2 data-i18n="contact_title">Contact</h2>
+      <p class="section-lead" data-i18n="contact_lead">Une question, un partenariat, une visite ? Écrivez-nous.</p>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label" data-i18n="contact_address_label">Adresse</span>
+          <span data-i18n="contact_address_value">Quartier Banikani, Rue de la Pharmacie du Campus, Maison MOUMOUNI, Parakou, Bénin</span>
+        </li>
+        <li>
+          <span class="contact-label" data-i18n="contact_phone_label">WhatsApp</span>
+          <span><a href="https://wa.me/22967758078" target="_blank" rel="noopener">+229 67 75 80 78</a> · <a href="https://wa.me/905387690829" target="_blank" rel="noopener">+90 538 769 08 29</a> · <a href="https://wa.me/96551768155" target="_blank" rel="noopener">+965 5176 8155</a></span>
+        </li>
+        <li>
+          <span class="contact-label" data-i18n="contact_email_label">Email</span>
+          <span><a href="mailto:ong.ittihad@gmail.com">ong.ittihad@gmail.com</a></span>
+        </li>
+      </ul>
+    </div>
+    <div class="contact-cta-card">
+      <h3 data-i18n="contact_card_title">Rejoignez notre action</h3>
+      <p data-i18n="contact_card_body">Que vous soyez une organisation partenaire, un donateur ou un bénévole, votre soutien compte.</p>
+      <a href="mailto:ong.ittihad@gmail.com" class="btn btn-ghost-dark" data-i18n="contact_card_cta">Écrire un email</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="unity-stripe" aria-hidden="true"></div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="images/logo.jpg" alt="AL-ITTIHAD ONG">
+      <div>
+        <p class="footer-name">AL-ITTIHAD ONG</p>
+        <p class="footer-tagline-ar">الاتحاد قوة — الدال على الخير كفاعله</p>
+        <p class="footer-tagline" data-i18n="footer_tagline">L'union fait la force</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#top" data-i18n="nav_home">Accueil</a>
+      <a href="#apropos" data-i18n="nav_about">Qui sommes-nous</a>
+      <a href="#actions" data-i18n="nav_actions">Nos actions</a>
+      <a href="#partenaires" data-i18n="nav_partners">Partenaires</a>
+      <a href="#don" data-i18n="nav_donate">Faire un don</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/share/1DrvUCThfH/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+      </a>
+      <a href="https://tiktok.com/@al.ittihad.ong" target="_blank" rel="noopener" aria-label="TikTok" class="social-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-3.02-3.02h-3.1v13.3a2.6 2.6 0 1 1-1.83-2.48V10.5a5.7 5.7 0 1 0 4.93 5.65V9.4a7.16 7.16 0 0 0 4.02 1.23V7.53a4.27 4.27 0 0 1-1-.05z"/></svg>
+      </a>
+    </div>
+    <p class="footer-legal" data-i18n="footer_legal">AL-ITTIHAD ONG — Récépissé N° ONG-326089 — Ministère de l'Intérieur et de la Sécurité Publique du Bénin</p>
+  </div>
+</footer>
+
+<script src="translations.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
