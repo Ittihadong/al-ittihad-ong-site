@@ -25,16 +25,25 @@ collections:
             fields:
               - { name: "date_fr", label: "Date / lieu (français)", widget: "string" }
               - { name: "title_fr", label: "Titre (français)", widget: "string" }
-              - { name: "body_fr", label: "Texte (français)", widget: "text" }
+              - { name: "body_fr", label: "Texte (français)", widget: "markdown", buttons: ["bold", "italic", "link", "bulleted-list", "numbered-list", "quote"], modes: ["rich_text"] }
               - { name: "date_en", label: "Date / lieu (anglais) — optionnel", widget: "string", required: false }
               - { name: "title_en", label: "Titre (anglais) — optionnel", widget: "string", required: false }
-              - { name: "body_en", label: "Texte (anglais) — optionnel", widget: "text", required: false }
+              - { name: "body_en", label: "Texte (anglais) — optionnel", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "bulleted-list", "numbered-list", "quote"], modes: ["rich_text"] }
               - { name: "date_ar", label: "Date / lieu (arabe) — optionnel", widget: "string", required: false }
               - { name: "title_ar", label: "Titre (arabe) — optionnel", widget: "string", required: false }
-              - { name: "body_ar", label: "Texte (arabe) — optionnel", widget: "text", required: false }
+              - { name: "body_ar", label: "Texte (arabe) — optionnel", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "bulleted-list", "numbered-list", "quote"], modes: ["rich_text"] }
               - { name: "date_tr", label: "Date / lieu (turc) — optionnel", widget: "string", required: false }
               - { name: "title_tr", label: "Titre (turc) — optionnel", widget: "string", required: false }
-              - { name: "body_tr", label: "Texte (turc) — optionnel", widget: "text", required: false }
+              - { name: "body_tr", label: "Texte (turc) — optionnel", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "bulleted-list", "numbered-list", "quote"], modes: ["rich_text"] }
+              - name: "images"
+                label: "Photos (optionnel, plusieurs possibles)"
+                widget: "list"
+                required: false
+                field: { name: "image", label: "Photo", widget: "image" }
+              - name: "video"
+                label: "Vidéo (optionnel)"
+                widget: "file"
+                required: false
 
   - name: "projects"
     label: "Projets en cours"
@@ -52,13 +61,17 @@ collections:
             fields:
               - { name: "image", label: "Photo du projet", widget: "image" }
               - { name: "title_fr", label: "Titre (français)", widget: "string" }
-              - { name: "body_fr", label: "Description (français)", widget: "text" }
+              - { name: "body_fr", label: "Description (français)", widget: "markdown", buttons: ["bold", "italic", "link", "bulleted-list", "numbered-list", "quote"], modes: ["rich_text"] }
               - { name: "title_en", label: "Titre (anglais) — optionnel", widget: "string", required: false }
-              - { name: "body_en", label: "Description (anglais) — optionnel", widget: "text", required: false }
+              - { name: "body_en", label: "Description (anglais) — optionnel", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "bulleted-list", "numbered-list", "quote"], modes: ["rich_text"] }
               - { name: "title_ar", label: "Titre (arabe) — optionnel", widget: "string", required: false }
-              - { name: "body_ar", label: "Description (arabe) — optionnel", widget: "text", required: false }
+              - { name: "body_ar", label: "Description (arabe) — optionnel", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "bulleted-list", "numbered-list", "quote"], modes: ["rich_text"] }
               - { name: "title_tr", label: "Titre (turc) — optionnel", widget: "string", required: false }
-              - { name: "body_tr", label: "Description (turc) — optionnel", widget: "text", required: false }
+              - { name: "body_tr", label: "Description (turc) — optionnel", widget: "markdown", required: false, buttons: ["bold", "italic", "link", "bulleted-list", "numbered-list", "quote"], modes: ["rich_text"] }
+              - name: "video"
+                label: "Vidéo supplémentaire (optionnel)"
+                widget: "file"
+                required: false
 
   - name: "gallery"
     label: "Galerie photos"
@@ -74,7 +87,8 @@ collections:
             label_singular: "photo"
             summary: "{{alt_fr}}"
             fields:
-              - { name: "image", label: "Photo", widget: "image" }
+              - { name: "image", label: "Photo (laisser vide si vidéo)", widget: "image", required: false }
+              - { name: "video", label: "Vidéo (laisser vide si photo)", widget: "file", required: false }
               - { name: "alt_fr", label: "Description (français)", widget: "string" }
               - { name: "alt_en", label: "Description (anglais) — optionnel", widget: "string", required: false }
               - { name: "alt_ar", label: "Description (arabe) — optionnel", widget: "string", required: false }
