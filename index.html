@@ -41,10 +41,11 @@
 </div>
 
 <!-- ===== HEADER ===== -->
-<header class="site-header" id="top">
+<div id="top" style="position:relative;height:0;"></div>
+<header class="site-header">
   <div class="header-inner">
     <a class="brand" href="#top">
-      <img src="images/logo.jpg" alt="AL-ITTIHAD ONG" class="brand-logo">
+      <img src="images/logo.jpg" alt="AL-ITTIHAD ONG" class="brand-logo logo-zoom" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Agrandir le logo">
       <span class="brand-text">
         <span class="brand-name">AL-ITTIHAD ONG <span class="brand-name-ar">جمعية الاتحاد الخيرية</span></span>
         <span class="brand-tagline" data-i18n="brand_tagline">Association Caritative de l'Union</span>
@@ -518,7 +519,7 @@
   <div class="unity-stripe" aria-hidden="true"></div>
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="images/logo.jpg" alt="AL-ITTIHAD ONG">
+      <img src="images/logo.jpg" alt="AL-ITTIHAD ONG" class="logo-zoom" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Agrandir le logo">
       <div>
         <p class="footer-name">AL-ITTIHAD ONG</p>
         <p class="footer-tagline-ar">الاتحاد قوة — الدال على الخير كفاعله</p>
@@ -552,6 +553,20 @@
 <!-- Netlify Identity: lets an invite/recovery link (which opens this page with a
      token in the URL) show the "set your password" popup, and keeps editors
      logged in when they come back to the site. -->
+<div id="logoLightbox" class="logo-lightbox" hidden>
+  <div class="news-modal-backdrop" data-close></div>
+  <button type="button" class="news-modal-close logo-lightbox-close" data-close aria-label="Fermer">&times;</button>
+  <img src="" alt="AL-ITTIHAD ONG" class="logo-lightbox-img">
+</div>
+
+<div id="newsModal" class="news-modal" hidden>
+  <div class="news-modal-backdrop" data-close></div>
+  <div class="news-modal-panel" role="dialog" aria-modal="true">
+    <button type="button" class="news-modal-close" data-close aria-label="Fermer">&times;</button>
+    <div class="news-modal-body"></div>
+  </div>
+</div>
+
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   if (window.netlifyIdentity) {
